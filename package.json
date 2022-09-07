@@ -1,0 +1,50 @@
+{
+  "name": "adaptive-cat-energy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wunschpunsh/adaptive-cat-energy.git"
+  },
+  "author": "Artem Salnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wunschpunsh/adaptive-cat-energy/issues"
+  },
+  "homepage": "https://github.com/wunschpunsh/adaptive-cat-energy#readme",
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
+  "engines": {
+    "node": "^16"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.3.11",
+    "stylelint": "^13.13.1"
+  },
+  "type": "module"
+}
