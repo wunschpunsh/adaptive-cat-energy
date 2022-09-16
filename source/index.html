@@ -10,15 +10,17 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header logo">
-    <a class="logo__link" href="#">
-      <img class="logo__image" src="./img/logos/header-logo-small.svg" width="191" height="38"
-        alt="логотип сайта Cat Energy">
-    </a>
-    <nav class="main-header__navigation main-nav">
-      <button class="main-nav__button" type="button">
+  <header class="main-header">
+    <div class="main-header__container">
+      <a class="main-header__link" href="#">
+        <img class="main-header__logo" src="./img/logos/header-logo-small.svg" width="191" height="38"
+          alt="логотип сайта Cat Energy">
+      </a>
+      <button class="main-header__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-header__navigation main-nav main-nav--closed">
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -42,12 +44,14 @@
   </header>
   <main class="main-container">
     <section class="intro">
-      <div class="intro__container">
+      <div class="intro__wrapper">
         <h1 class="intro__title">Функциональное питание для котов
         </h1>
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
         <img class="intro__image" src="./img/contant/product-small.png" width="280" height="270"
           alt="аппетитная упаковка с кормом">
+      </div>
+      <div class="intro__link-container">
         <a class="intro__link button button--primary" href="./form.html">подобрать программу</a>
       </div>
     </section>

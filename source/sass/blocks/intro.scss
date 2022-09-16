@@ -1,0 +1,38 @@
+.intro__wrapper {
+  padding: 23px 35px 164px;
+  position: relative;
+  background-image: url('../img/background/background-cat-small.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $basic-green;
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: $white;
+}
+
+.intro__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+}
+
+.intro__image {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+.intro__link-container {
+  padding: 135px 20px 0;
+}

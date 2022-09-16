@@ -1,0 +1,17 @@
+.button {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 14px;
+  line-height: 26px;
+  text-decoration: none;
+
+  &--primary {
+    min-width: 280px;
+    padding: 7px 44px;
+    background-color: $basic-green;
+  }
+}

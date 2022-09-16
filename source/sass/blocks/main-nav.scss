@@ -1,0 +1,19 @@
+.main-nav {
+  
+  &--closed {
+    display: none;
+  }
+}
+
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__link {
+  font-weight: 500;
+  color: $black;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

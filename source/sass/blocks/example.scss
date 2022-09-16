@@ -1,0 +1,22 @@
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+}
+
+.example__description {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__expenses {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+}

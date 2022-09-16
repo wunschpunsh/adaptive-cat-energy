@@ -1,0 +1,28 @@
+.guide__container {
+  padding: 0 20px 50px;
+}
+
+.guide__title {
+  margin: 0;
+  margin-bottom: 40px;
+  color: $black;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+.guide__list {
+  margin: 0;
+  padding-left: 80px;
+  list-style: none;
+}
+.guide__item {
+  margin-bottom: 24px;
+  font-family: 'Arial', sans-serif;
+  list-style: none;
+  font-size: 14px;
+  line-height: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
