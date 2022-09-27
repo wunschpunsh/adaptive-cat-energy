@@ -1,0 +1,30 @@
+.extra-options__container {
+  margin-bottom: 21px;
+}
+
+.extra-options__title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.extra-options__list {
+  padding: 0;
+  padding-left: 46px;
+  margin: 0;
+  list-style: none;
+}
+
+.extra-options__item {
+  margin-bottom: 13px;
+}
+
+.extra-options__description {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}

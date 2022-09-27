@@ -10,24 +10,26 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header logo">
-    <a class="logo__link" href="#">
-      <img class="logo__image" src="./img/logos/header-logo-small.svg" width="191" height="38"
-        alt="логотип сайта Cat Energy">
-    </a>
-    <nav class="main-header__navigation main-nav">
-      <button class="main-nav__button" type="button">
+  <header class="main-header">
+    <div class="main-header__container">
+      <a class="main-header__link" href="#">
+        <img class="main-header__logo" src="./img/logos/header-logo-small.svg" width="191" height="38"
+          alt="логотип сайта Cat Energy">
+      </a>
+      <button class="main-header__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-header__navigation main-nav main-nav--closed">
       <div class="main-nav__container">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="./index.html">
+            <a class="main-nav__link">
               главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__link" href="./catalog.html">
               каталог продукции
             </a>
           </li>
@@ -239,16 +241,15 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__container">
+      <div class="contacts__container contacts__container--decore">
         <h2 class="visually-hidden">Наш адрес</h2>
         <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
         <p class="contacts__adress">ул. Большая
           Конюшенная, д. 19/8
           Санкт-Петербург
         </p>
-        <img src="./img/contant/map-small.jpg" width="320" height="362" alt="Карта с нашим адресом"
-          class="contacts__map">
       </div>
+      <img class="contacts__map" src="./img/contant/map-small.jpg" width="320" height="362" alt="Карта с нашим адресом">
     </section>
   </main>
   <footer class="main-footer">

@@ -1,3 +1,10 @@
+.slider__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 210px;
+}
+
 .slider__text {
   font-size: 16px;
   line-height: 20px;

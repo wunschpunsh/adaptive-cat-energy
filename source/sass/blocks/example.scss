@@ -1,4 +1,11 @@
+.example__container {
+  padding: 25px 20px 40px;
+  background-color: #eaeaea;
+}
+
 .example__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -6,6 +13,8 @@
 }
 
 .example__description {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: 'Arial';
   font-style: normal;
   font-weight: 400;
@@ -14,9 +23,17 @@
 }
 
 .example__expenses {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: $black;
+}
+
+.example__result {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }

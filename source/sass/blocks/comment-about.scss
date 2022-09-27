@@ -1,0 +1,27 @@
+.comment-about {
+  margin-bottom: 22px;
+}
+
+.comment-about__title {
+  margin: 0;
+  margin-bottom: 38px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.comment-about__text {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 150px;
+  padding: 10px 12px 10px 15px;
+  border: 1px solid #E7E7E7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  resize: none;
+  color: $dark-grey;
+}

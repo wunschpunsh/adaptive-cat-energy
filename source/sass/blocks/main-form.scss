@@ -1,0 +1,28 @@
+.main-form {
+  padding: 27px 20px 32px;
+}
+
+.main-form__title {
+  margin: 0;
+  margin-bottom: 37px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $black;
+}
+
+.main-form__description {
+  margin: 0;
+  margin-bottom: 39px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.main-form__asterisk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}

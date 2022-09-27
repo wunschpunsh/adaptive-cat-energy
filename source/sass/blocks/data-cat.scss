@@ -1,0 +1,19 @@
+
+.data-cat__container {
+  padding-bottom: 14px;
+}
+
+.data-cat__field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.data-cat__title {
+  margin-right: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: $dark-grey;
+}

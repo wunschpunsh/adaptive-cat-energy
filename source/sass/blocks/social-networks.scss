@@ -1,0 +1,16 @@
+.social-networks {
+  padding: 20px 74px;
+  margin-bottom: 22px;
+}
+
+.social-networks__list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-networks__item:not(:last-child) {
+  margin-right: 24px;
+}
