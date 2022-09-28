@@ -15,4 +15,13 @@
     border: none;
     background-color: $basic-green;
   }
+
+  &--secondary {
+    padding: 10px 0;
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: $basic-grey;
+    color: $dark-grey;
+  }
 }

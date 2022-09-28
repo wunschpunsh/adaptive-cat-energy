@@ -1,0 +1,24 @@
+.card-more__container {
+  padding: 70px 0 0;
+}
+
+.card-more__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.card-more__description {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $dark-grey;
+}

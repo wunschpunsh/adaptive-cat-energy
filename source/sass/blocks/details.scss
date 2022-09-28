@@ -1,0 +1,31 @@
+.details__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.details__header {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.details__quality {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}

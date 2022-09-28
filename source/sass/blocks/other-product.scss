@@ -1,0 +1,23 @@
+.other-product__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.other-product__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.other-product__details {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-grey;
+}
