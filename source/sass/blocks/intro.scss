@@ -1,3 +1,9 @@
+.intro {
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
+}
+
 .intro__wrapper {
   padding: 23px 35px 164px;
   position: relative;
@@ -5,6 +11,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 237px 0 120px;
+    background-image: none;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 116px 0 190px;
+  }
 }
 
 .intro__title {
@@ -15,6 +31,14 @@
   font-weight: 400;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: start;
+    color: $black;
+  }
 }
 
 .intro__slogan {
@@ -24,6 +48,14 @@
   text-transform: uppercase;
   text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: start;
+    color: $black;
+  }
 }
 
 .intro__image {
@@ -31,8 +63,31 @@
   position: absolute;
   top: 50%;
   left: 5%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 709px;
+    min-height: 609px;
+    z-index: -1;
+    top: 125%;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 552px;
+    min-height: 499px;
+    z-index: 1;
+    left: 72%;
+    top: -50%;
+  }
 }
 
 .intro__link-container {
   padding: 135px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 374px 526px 91px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 286px 267px 190px;
+  }
 }

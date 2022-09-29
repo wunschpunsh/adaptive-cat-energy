@@ -4,11 +4,12 @@
 
 
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
+
   margin: 0 auto;
   min-width: 320px;
   min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   background-color: $white;
   color: $dark-grey;
   font-family: "Oswald", "Arial", sans-serif;

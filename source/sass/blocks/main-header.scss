@@ -1,14 +1,30 @@
 .main-header__container {
-  display: flex;
-  justify-content: space-between;
   padding: 10px 20px 17px;
-  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 30px 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px 114px;
+  }
 }
+
 
 .main-header__logo-wrapper {
   display: flex;
   align-items: center;
-  flex-basis: 70%;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    // margin-right: 94px;
+  }
 }
 
+
+.main-header__button {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

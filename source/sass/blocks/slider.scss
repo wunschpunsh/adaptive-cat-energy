@@ -1,8 +1,6 @@
 .slider__container {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 210px;
+  justify-content: space-around;
 }
 
 .slider__text {
@@ -10,4 +8,45 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.slider__image-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: relative;
+  }
+}
+.slider__image {
+  display: block;
+  margin: 0 auto;
+
+  &--before {
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+
+  &--after {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 591px;
+    min-height: 511px;
+  }
 }

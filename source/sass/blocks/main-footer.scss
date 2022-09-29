@@ -1,6 +1,16 @@
 .main-footer__container {
   padding: 39px 20px 22px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 30px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 110px;
+  }
 }
 
 .main-footer__logo {

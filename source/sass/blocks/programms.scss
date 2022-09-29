@@ -1,9 +1,23 @@
 .programms__container {
   padding: 20px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .programms__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+  }
 }

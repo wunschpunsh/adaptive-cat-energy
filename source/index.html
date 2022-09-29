@@ -12,41 +12,42 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container">
-      <div class="main-header__logo-wrapper">
-        <a class="main-header__link" href="index.html">
-          <img class="main-header__logo" src="./img/logos/header-logo-image-small.svg" width="34" height="38"
-            alt="логотип сайта Cat Energy">
-        </a>
-        <a class="main-header__link" href="index.html">
-          <img class="main-header__logo" src="./img/logos/header-logo-text-small.svg" width="101" height="18"
-            alt="логотип сайта Cat Energy">
-        </a>
-      </div>
-      <button class="main-header__button" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <nav class="main-header__navigation main-nav">
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__link" href="index.html">
+            <img class="main-header__logo" src="./img/logos/header-logo-image-small.svg" width="34" height="38"
+              alt="логотип сайта Cat Energy">
+          </a>
+          <a class="main-header__link" href="index.html">
+            <img class="main-header__logo" src="./img/logos/header-logo-text-small.svg" width="101" height="18"
+              alt="логотип сайта Cat Energy">
+          </a>
+          <button class="main-header__button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <div class="main-nav__container">
+          <ul class="main-nav__list main-nav__list--index">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link" href="./index.html">
+                главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./catalog.html">
+                каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="./form.html">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-header__navigation main-nav main-nav--closed">
-      <div class="main-nav__container">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./index.html">
-              главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./catalog.html">
-              каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="./form.html">
-              подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
   </header>
   <main class="main-container">
     <section class="intro">
@@ -54,8 +55,14 @@
         <h1 class="intro__title">Функциональное питание для котов
         </h1>
         <p class="intro__slogan">Занялся собой? Займись котом!</p>
-        <img class="intro__image" src="./img/contant/product-small.png" width="280" height="270"
-          alt="аппетитная упаковка с кормом">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="./img/contant/product-large.png 1x, ./img/contant/product-large@2x.png 2x">
+          <source media="(min-width:768px)"
+            srcset="./img/contant/product-medium.png 1x, ./img/contant/product-medium@2x.png 2x">
+          <img class="intro__image" src="./img/contant/product-small.png" width="280" height="270"
+            alt="аппетитная упаковка с кормом">
+        </picture>
       </div>
       <div class="intro__link-container">
         <a class="intro__link button button--primary" href="./form.html">подобрать программу</a>
@@ -109,28 +116,41 @@
     </section>
     <section class="example">
       <div class="example__container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день.
-        </p>
-        <div class="example__result weight time">
-          <div class="weight__container">
-            <span class="weight__result">5 КГ</span>
-            <span class="weight__description">снижение веса</span>
-          </div>
-          <div class="time__container">
-            <span class="time__result">60 ДНЕЙ</span>
-            <span class="time__description">затрачено времени</span>
+        <div class="example__result-container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по
+            16 часов в день.
+          </p>
+          <div class="example__result weight time">
+            <div class="example__result-wrapp">
+              <fieldset class="weight__container">
+                <span class="weight__result">5 КГ</span>
+                <legend class="weight__description">снижение веса</legend>
+              </fieldset>
+              <fieldset class="time__container">
+                <span class="time__result">60 ДНЕЙ</span>
+                <legend class="time__description">затрачено времени</legend>
+              </fieldset>
+            </div>
+            <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
           </div>
         </div>
-        <p class="example__expenses">Затраты на питание: 15 000 РУБ.</p>
         <div class="example__slider-container slider">
           <div class="slider__image-container">
-            <img src="./img/contant/cat-before-small.png" alt="толстый котик" width="280" height="232"
-              class="slider__image slider__image--before">
-            <img src="./img/contant/cat-after-small.png" alt="худой котик" width="243" height="232"
-              class="slider__image slider__image--after">
+            <picture>
+              <source media="(min-width:768px)"
+                srcset="./img/contant/cat-before-medium.png 1x, ./img/contant/cat-before-medium@2x.png 2x">
+              <img src="./img/contant/cat-before-small.png" alt="толстый котик" width="280" height="232"
+                class="slider__image slider__image--before">
+            </picture>
+            <picture>
+              <source media="(min-width:768px)"
+                srcset="./img/contant/cat-after-medium.png 1x, ./img/contant/cat-after-medium@2x.png 2x">
+              <img src="./img/contant/cat-after-small.png" alt="худой котик" width="243" height="232"
+                class="slider__image slider__image--after">
+            </picture>
           </div>
           <div class="slider__container">
             <span class="slider__text slider__text--before">Было</span>
@@ -152,7 +172,16 @@
           Санкт-Петербург
         </p>
       </div>
-      <img class="contacts__map" src="./img/contant/map-small.jpg" width="320" height="362" alt="Карта с нашим адресом">
+      <div class="contacts__map-container">
+        <picture>
+          <source media="(min-width:1440px)"
+            srcset="./img/contant/map-large.jpg 1x, ./img/contant/map-large@2x.jpg 2x,">
+          <source media="(min-width:768px)"
+            srcset="./img/contant/map-medium.jpg 1x, ./img/contant/map-medium@2x.jpg 2x">
+          <img class="contacts__map" src="./img/contant/map-small.jpg" width="320" height="362"
+            alt="Карта с нашим адресом">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="main-footer">

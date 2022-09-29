@@ -1,3 +1,9 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts__container {
   display: flex;
   justify-content: space-between;
@@ -5,6 +11,20 @@
 
   &--decore {
     background-color: #eaeaea;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 39%;
+    padding: 60px 80px 56px;
+    z-index: 1;
+    background-color: $white;
   }
 }
 
@@ -14,6 +34,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  
+  @media (min-width: $tablet-width) {
+    flex-basis: 30%;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
 }
 
 .contacts__adress {
@@ -23,7 +50,15 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 30%;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
+
 
 .contacts__map {
   width: 100%;

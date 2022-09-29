@@ -1,5 +1,13 @@
 .guide__container {
   padding: 0 20px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 105px 47px 30px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 26px;
+  }
 }
 
 .guide__title {
@@ -9,11 +17,30 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 .guide__list {
   margin: 0;
   padding-left: 80px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 137px;
+    grid-row-gap: 37px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 83,33px;
+  }
 }
 .guide__item {
   margin-bottom: 24px;
@@ -24,5 +51,13 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    // min-height: 280px;
+    margin-bottom: 0;
+    padding: 151px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

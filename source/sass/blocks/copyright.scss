@@ -12,4 +12,8 @@
   line-height: 18px;
   text-decoration: none;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }

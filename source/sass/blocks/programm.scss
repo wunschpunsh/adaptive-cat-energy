@@ -2,6 +2,16 @@
   margin-bottom: 20px;
   padding: 20px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 82px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 52px 55px;
+    margin-bottom: 71px;
+  }
 }
 
 .programm__title {
@@ -13,6 +23,18 @@
   text-transform: uppercase;
   font-weight: 400;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
 }
 
 .programm__description {
@@ -21,6 +43,17 @@
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .programm__link {
@@ -29,4 +62,9 @@
   text-transform: uppercase;
   line-height: 16px;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

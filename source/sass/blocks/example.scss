@@ -1,6 +1,33 @@
 .example__container {
   padding: 25px 20px 40px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    // padding: 43px 30px 55px;
+    background-color: transparent;
+    padding: 0;
+    padding-top: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding: 43px 110px 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__result-container {
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 250px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding: 0;
+  }
+
+
 }
 
 .example__title {
@@ -10,6 +37,17 @@
   font-size: 36px;
   line-height: 40px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 43px 0 0 110px;
+    margin-bottom: 76px;
+  }
 }
 
 .example__description {
@@ -20,9 +58,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 193px 69px 110px;
+    background-color: $basic-grey;
+    margin: 0;
+  }
 }
 
 .example__expenses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   margin-bottom: 40px;
   font-size: 14px;
@@ -30,10 +83,49 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .example__result {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0 263px 55px 110px;
+    background-color: $basic-grey;
+  }
+}
+
+.example__result-wrapp {
+  display: flex;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+
+}
+
+.example__slider-container {
+  @media (min-width: $tablet-width) {
+    padding: 370px 0 56px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin-top: 179px;
+    padding: 340px 110px 65px 0;
+  }
 }

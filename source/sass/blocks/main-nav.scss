@@ -1,12 +1,65 @@
 .main-nav {
   
-  &--closed {
-    display: none;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__container {
+  display: none;
+
+  .main-nav--opened & {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 18px;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+
+      color: $white;
+
+      &::before {
+        display: block;
+        content: "";
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        z-index: -1;
+        background-image: url('../../img/background/background-cat-large.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
   }
 }
 
 .main-nav__item {
+  padding: 10px 0;
   list-style: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    &:not(:last-child) {
+      margin-right: 33px;
+    }
+  }
 }
 
 .main-nav__link {
@@ -16,4 +69,19 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    .main-nav__list--index & {
+      color: $white;
+    }
+  }
 }
