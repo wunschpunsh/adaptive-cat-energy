@@ -6,15 +6,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
+    @include container;
+    padding: 0;
   }
+
 }
 
 .programms__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;

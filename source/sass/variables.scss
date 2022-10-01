@@ -11,3 +11,10 @@ $basic-green: #68B738;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
+
+@mixin container {
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

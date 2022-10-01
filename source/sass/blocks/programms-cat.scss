@@ -1,5 +1,11 @@
 .programms-cat__container {
   padding: 20px 20px 20px 45px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 28px 29px 88px;
+    margin-bottom: 71px;
+    border: 1px solid #e7e7e7;
+  }
 }
 
 .programms-cat__list {
@@ -9,7 +15,7 @@
 }
 
 .programms-cat__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 23px;
 }
 
 .programms-cat__description {
@@ -17,4 +23,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

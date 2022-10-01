@@ -1,3 +1,47 @@
+.form__wrap {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
+
+
+.form__footer-container {
+  @media (min-width:$tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
 .form__button {
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 41%;
+    margin: 0;
+    margin-right: 61px;
+    padding: 13px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
+  }
+}
+
+.form__asterisk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

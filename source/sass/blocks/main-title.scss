@@ -1,8 +1,25 @@
+.main__title-container {
+  @include container;
+}
+
 .main-title {
   margin: 0;
   margin-bottom: 41px;
+  padding-left: 20px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    margin-bottom: 163px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 165px;
+  }
 }

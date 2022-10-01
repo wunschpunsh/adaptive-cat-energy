@@ -4,9 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 15px 105px 47px 30px;
   }
-  
+
   @media (min-width: $desktop-width) {
-    padding: 0 110px 26px;
+    padding: 0;
+    @include container;
   }
 }
 
@@ -24,6 +25,7 @@
     line-height: 60px;
   }
 }
+
 .guide__list {
   margin: 0;
   padding-left: 80px;
@@ -39,9 +41,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 83,33px;
+    grid-column-gap: 99px;
+    margin-bottom: 43px;
   }
 }
+
 .guide__item {
   margin-bottom: 24px;
   font-family: 'Arial', sans-serif;

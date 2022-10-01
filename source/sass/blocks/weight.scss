@@ -1,6 +1,10 @@
 .weight__container {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 42px;
+  }
 }
 
 .weight__result {

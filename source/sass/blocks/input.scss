@@ -3,9 +3,17 @@
   padding: 13px;
   border: 1px solid #e7e7e7;
 
+  @media (min-width: $tablet-width) {
+    padding: 17px;
+  }
+
   &::placeholder {
-    line-height: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     color: $dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
   }
 }

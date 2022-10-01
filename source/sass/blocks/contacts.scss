@@ -19,12 +19,13 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
-    left: 110px;
-    width: 39%;
+    top: 20%;
+    left: calc((100vw - 1220px)/2);
+    width: 21.6%;
     padding: 60px 80px 56px;
     z-index: 1;
     background-color: $white;
+    @include container;
   }
 }
 
@@ -34,7 +35,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  
+
   @media (min-width: $tablet-width) {
     flex-basis: 30%;
     font-size: 20px;
@@ -57,10 +58,37 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 39%;
+    text-align: start;
+  }
 }
 
 
-.contacts__map {
+.contacts__map-google {
   width: 100%;
-  height: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+
+  &--nojs {
+
+
+    background-image: url("../../img/contant/map-small.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width:$tablet-width) {
+      background-image: url('../../img/contant/map-medium.jpg');
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url('../../img/contant/map-large.jpg');
+    }
+  }
+
 }

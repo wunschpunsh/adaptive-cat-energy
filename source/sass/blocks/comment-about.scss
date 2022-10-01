@@ -1,5 +1,9 @@
 .comment-about {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .comment-about__title {
@@ -9,6 +13,12 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment-about__text {
@@ -24,4 +34,11 @@
   overflow: hidden;
   resize: none;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

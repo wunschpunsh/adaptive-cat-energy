@@ -1,12 +1,20 @@
-
 .data-cat__container {
   padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 72px;
+  }
 }
 
 .data-cat__field {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .data-cat__title {
@@ -16,4 +24,9 @@
   text-transform: uppercase;
   white-space: nowrap;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

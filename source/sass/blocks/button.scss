@@ -4,10 +4,11 @@
   width: 100%;
   text-align: center;
   text-transform: uppercase;
-  color: $white;
   font-size: 16px;
   line-height: 26px;
   text-decoration: none;
+  cursor: pointer;
+  color: $white;
 
   &--primary {
     padding: 7px 44px;

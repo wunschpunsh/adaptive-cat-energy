@@ -1,5 +1,14 @@
-.main-form {
+.main-form__container {
   padding: 27px 20px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    @include container;
+  }
 }
 
 .main-form__title {
@@ -9,6 +18,16 @@
   line-height: 36px;
   font-weight: 400;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .main-form__description {
@@ -18,11 +37,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $black;
-}
 
-.main-form__asterisk {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
+  @media (min-width: $tablet-width) {
+    width: 52%;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 27%;
+  }
 }

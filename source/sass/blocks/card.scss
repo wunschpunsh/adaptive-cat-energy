@@ -1,8 +1,32 @@
 .card__wrapper {
   display: flex;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
 }
 
 .card__image {
+  display: block;
   margin-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -45px;
+    left: calc(50% - (162px/2));
+    min-width: 161px;
+    min-height: 174px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+
+    &--big {
+      top: -67px;
+      left: calc(50% - (168px/2));
+      min-height: 200px;
+      min-width: 168px;
+      margin-bottom: 6px;
+    }
+  }
 }

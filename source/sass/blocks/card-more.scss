@@ -1,5 +1,9 @@
 .card-more__container {
   padding: 70px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .card-more__title {
@@ -11,6 +15,17 @@
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding: 0 35px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 17px;
+  }
 }
 
 .card-more__description {
@@ -21,4 +36,11 @@
   line-height: 16px;
   text-align: center;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

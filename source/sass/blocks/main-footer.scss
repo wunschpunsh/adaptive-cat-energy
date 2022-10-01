@@ -1,15 +1,21 @@
+.main-footer {
+  background-color: #eaeaea;
+}
+
 .main-footer__container {
   padding: 39px 20px 22px;
-  background-color: #eaeaea;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 58px 30px 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 110px;
+    padding: 58px 0;
+    @include container;
   }
 }
 
@@ -18,4 +24,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 0;
+  }
 }
