@@ -18,3 +18,14 @@ $mobile-width-only: 767px;
     margin: 0 auto;
   }
 }
+
+
+@mixin title-decore {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding: 0 40px;
+    margin-left: -40px;
+    background-color: $white;
+  }
+
+}

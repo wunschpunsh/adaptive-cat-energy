@@ -29,7 +29,7 @@
 .example__result-container {
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 250px;
+    padding: 0 30px 255px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +50,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 63px;
+    margin-top: 43px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,13 +87,14 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    width: 99%;
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 78%;
+    width: 72%;
     padding-top: 70px;
     margin-bottom: 70px;
   }
@@ -101,8 +104,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -110,20 +112,28 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    flex-basis: 25%;
+    display: block;
+    margin: 0;
+    margin-top: 11px;
     font-size: 20px;
     line-height: 20px;
+    text-align: end;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
     margin-bottom: 70px;
+    flex-basis: 55%;
   }
 }
 
 .example__result {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -140,19 +150,20 @@
   margin-bottom: 34px;
 
   @media (min-width: $desktop-width) {
-    flex-basis: 60%;
-    margin-bottom: 55px;
+    flex-basis: 80%;
+    margin-bottom: 60px;
   }
 }
 
 .example__slider-container {
   @media (min-width: $tablet-width) {
-    padding: 370px 0 56px;
+    position: relative;
+    padding: 366px 0 56px;
     background-color: #eaeaea;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    padding: 340px 0 0 0;
+    padding: 361px 0 0 0;
   }
 }

@@ -1,5 +1,5 @@
 .programms-cat__container {
-  padding: 20px 20px 20px 45px;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 29px 28px 29px 88px;
@@ -14,8 +14,34 @@
   list-style: none;
 }
 
+.programms-cat__field {
+  display: flex;
+  align-items: center;
+}
+
 .programms-cat__item:not(:last-child) {
   margin-bottom: 23px;
+}
+
+.programms-cat__marker {
+  position: relative;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+}
+
+.programms-cat__input:checked+.programms-cat__marker::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  left: calc(50% - 7px);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $basic-green;
 }
 
 .programms-cat__description {

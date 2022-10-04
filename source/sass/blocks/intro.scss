@@ -76,7 +76,8 @@
     min-width: 709px;
     min-height: 609px;
     z-index: -1;
-    top: 125%;
+    top: 107%;
+    left: 4%;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +93,7 @@
   padding: 135px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 29px 374px 526px 91px;
+    padding: 0 374px 526px 120px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +105,14 @@
 }
 
 .intro__link {
+
+  @media (min-width: $tablet-width) {
+    width: 89%;
+    padding: 17px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 40%;
   }

@@ -62,11 +62,18 @@
   @media (min-width: $desktop-width) {
     flex-basis: 39%;
     text-align: start;
+
+    & span {
+      display: block;
+      margin-top: 19px;
+    }
   }
 }
 
 
+
 .contacts__map-google {
+  display: block;
   width: 100%;
   min-height: 362px;
 

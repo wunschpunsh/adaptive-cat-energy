@@ -1,10 +1,12 @@
 .social-networks {
   padding: 20px 74px;
   margin-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 0;
+    border: none;
   }
 }
 

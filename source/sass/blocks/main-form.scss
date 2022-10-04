@@ -7,6 +7,12 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    // @include container;
+  }
+}
+
+.main-form__title-container {
+  @media (min-width: $desktop-width) {
     @include container;
   }
 }
@@ -27,6 +33,12 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 56px;
+  }
+}
+
+.main-form__description-container {
+  @media (min-width: $desktop-width) {
+    @include container;
   }
 }
 

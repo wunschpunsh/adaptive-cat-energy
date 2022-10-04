@@ -1,6 +1,10 @@
 .weight__container {
   display: flex;
   flex-direction: column;
+  position: relative;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  margin-right: 28px;
 
   @media (min-width: $desktop-width) {
     margin-right: 42px;
@@ -8,25 +12,43 @@
 }
 
 .weight__result {
+  display: block;
+  padding: 16px 43px;
   font-size: 24px;
   line-height: 24px;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    padding: 15px 57px 20px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .weight__description {
+  position: absolute;
+  width: 62%;
+  top: 50px;
+  left: 20px;
+  padding: 0 5px;
   font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
+    top: 64px;
+    left: 24px;
+    padding: 0 9px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #eaeaea;
   }
 }

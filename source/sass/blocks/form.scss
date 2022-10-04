@@ -3,25 +3,30 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 80px;
+    @include container;
   }
 }
 
+.form__footer {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
 
 .form__footer-container {
+
   @media (min-width:$tablet-width) {
     display: flex;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
-  }
+  @include container;
 }
 
 .form__button {
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    width: 41%;
+    width: 45%;
     margin: 0;
     margin-right: 61px;
     padding: 13px 45px;
