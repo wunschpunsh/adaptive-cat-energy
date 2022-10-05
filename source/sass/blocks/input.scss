@@ -9,8 +9,9 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    padding: 17px;
+    padding: 10px 18px;
     font-size: 20px;
+    line-height: 30px;
   }
 
   &::placeholder {

@@ -1,28 +1,33 @@
 .contacts-user {
-  padding: 26px 0 10px;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-    padding: 0;
-
-
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9%;
+    width: 100%;
+    height: 2px;
+    z-index: -1;
+    background-color: $basic-green;
   }
 
-  @media (min-width: $desktop-width) {
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 13%;
-      width: 100%;
-      height: 2px;
-      z-index: -1;
-      background-color: $basic-green;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
 
 .contacts-user__container {
+  padding: 0 20px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
   @include container;
 }
 
@@ -46,14 +51,22 @@
   line-height: 26px;
   font-weight: 400;
   color: $black;
+  @include title-decore-mobile;
+
+  @media (max-width:$mobile-width-only) {
+    margin-right: 79px;
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
+
+    @include title-decore;
   }
 
-  @include title-decore;
+
 }
 
 .contacts-user__field {

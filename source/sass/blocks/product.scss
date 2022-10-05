@@ -1,5 +1,5 @@
 .product__container {
-  padding: 0 20px;
+  // padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -30,8 +30,8 @@
 }
 
 .product__item {
-  padding: 8px 0 25px;
-  border-top: 1px solid #ebebeb;
+  padding: 20px 20px 25px;
+  border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     position: relative;

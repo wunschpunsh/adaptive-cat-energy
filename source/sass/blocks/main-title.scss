@@ -1,10 +1,14 @@
 .main__title-container {
+  @media (max-width: $mobile-width-only) {
+    padding: 27px 0 41px;
+    border-bottom: 1px solid #ebebeb;
+  }
+
   @include container;
 }
 
 .main-title {
   margin: 0;
-  margin-bottom: 41px;
   padding-left: 20px;
   font-weight: 400;
   font-size: 36px;

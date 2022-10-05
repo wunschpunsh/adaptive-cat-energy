@@ -1,8 +1,39 @@
 .card-more__container {
-  padding: 70px 0 0;
+  position: relative;
+  padding: 58px 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+}
+
+.card-more__decore {
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 15px);
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    top: -90px;
+    left: calc(50% - 30px);
+
+    &::after {
+      width: 60px;
+    }
   }
 }
 
@@ -38,9 +69,13 @@
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 59px;
+    margin-bottom: 83px;
     padding: 0 10px;
     font-size: 16px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
   }
 }
