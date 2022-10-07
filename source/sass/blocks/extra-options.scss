@@ -1,9 +1,8 @@
 .extra-options {
-
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 7%;
     width: 100%;
@@ -16,7 +15,6 @@
     &::before {
       top: 10%;
     }
-
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +23,6 @@
     }
   }
 }
-
 
 .extra-options__container {
   padding: 0 20px;
@@ -56,7 +53,6 @@
     line-height: 36px;
     @include title-decore;
   }
-
 }
 
 .extra-options__list {
@@ -92,7 +88,12 @@
   display: flex;
   align-items: center;
 }
-
+.extra-options__input {
+  &:disabled ~ .extra-options__marker,
+  &:disabled ~ .extra-options__description {
+    opacity: 0.3;
+  }
+}
 .extra-options__marker {
   position: relative;
   box-sizing: border-box;
@@ -101,23 +102,26 @@
   margin-right: 16px;
   border: 1px solid #cdcdcd;
 
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
   @media (min-width: $tablet-width) {
     margin-right: 19px;
   }
 }
 
-.extra-options__input:checked+.extra-options__marker::after {
-  content: "";
+.extra-options__input:checked + .extra-options__marker::after {
+  content: '';
   position: absolute;
   top: calc(50% - 8px);
   left: calc(50% - 8px);
   width: 18px;
   height: 14px;
-  background-image: url("../../img/check-icon.svg");
+  background-image: url('../../img/check-icon.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 
 .extra-options__description {
   font-size: 16px;

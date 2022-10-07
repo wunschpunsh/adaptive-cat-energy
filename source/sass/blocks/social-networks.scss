@@ -21,3 +21,16 @@
 .social-networks__item:not(:last-child) {
   margin-right: 24px;
 }
+
+.social-networks__logo {
+  fill: #666666;
+
+  .social-networks__link:hover & {
+    fill: $basic-green;
+  }
+
+  .social-networks__link:active & {
+    fill: $basic-green;
+    opacity: 0.3;
+  }
+}

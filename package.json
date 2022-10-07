@@ -46,5 +46,9 @@
     "postcss": "^8.3.11",
     "stylelint": "^13.13.1"
   },
-  "type": "module"
+  "type": "module",
+  "prettier": {
+    "singleQuote": true,
+    "semi": true
+  }
 }

@@ -2,7 +2,7 @@
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 8%;
     width: 100%;
@@ -54,7 +54,7 @@
   width: 100%;
   min-height: 150px;
   padding: 10px 12px 10px 15px;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   font-family: 'Oswald';
   font-weight: 400;
   font-size: 16px;
@@ -63,6 +63,15 @@
   overflow: hidden;
   resize: none;
   color: $dark-grey;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid $dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 19px;

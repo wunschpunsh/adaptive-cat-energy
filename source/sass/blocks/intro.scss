@@ -10,6 +10,10 @@
   background-size: cover;
   background-color: $basic-green;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../img/background/background-cat-small@2x.jpg');
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 237px 0 120px;
     background-image: none;

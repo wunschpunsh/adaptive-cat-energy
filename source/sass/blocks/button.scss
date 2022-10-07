@@ -15,6 +15,15 @@
     padding: 7px 44px;
     border: none;
     background-color: $basic-green;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: #ffffff4d;
+      background-color: #5eaa2f;
+    }
   }
 
   &--secondary {
@@ -24,5 +33,14 @@
     line-height: 20px;
     background-color: $basic-grey;
     color: $dark-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: #4444444d;
+      background-color: #ebebeb;
+    }
   }
 }

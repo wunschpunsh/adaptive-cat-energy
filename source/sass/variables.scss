@@ -3,8 +3,8 @@
 $white: #ffffff;
 $black: #000000;
 $dark-grey: #444444;
-$basic-grey: #F2F2F2;
-$basic-green: #68B738;
+$basic-grey: #f2f2f2;
+$basic-green: #68b738;
 
 // Viewports
 
@@ -12,13 +12,14 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width-only: 767px;
 
+// Mixin
+
 @mixin container {
   @media (min-width: $desktop-width) {
     max-width: 1220px;
     margin: 0 auto;
   }
 }
-
 
 @mixin title-decore-mobile {
   display: inline-block;
@@ -32,4 +33,13 @@ $mobile-width-only: 767px;
   padding: 0 40px;
   margin-left: -40px;
   background-color: $white;
+}
+
+@mixin slider-text-shadow {
+  box-shadow: 2px 0 0 $black, 4px 0 0 $black, 6px 0 0 $black, 8px 0 0 $black,
+    10px 0 0 $black, 12px 0 0 $black, 14px 0 0 $black, 16px 0 0 $black,
+    18px 0 0 $black, 20px 0 0 $black, 22px 0 0 $black, 24px 0 0 $black,
+    26px 0 0 $black, 28px 0 0 $black, 30px 0 0 $black, 32px 0 0 $black,
+    34px 0 0 $black, 36px 0 0 $black, 38px 0 0 $black, 40px 0 0 $black,
+    42px 0 0 $black, 44px 0 0 $black;
 }

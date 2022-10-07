@@ -141,6 +141,10 @@
   background-size: cover;
   background-color: $basic-green;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/background/gift-background-cat-small@2x.png');
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
@@ -150,6 +154,10 @@
     background-image: url("../../img/background/gift-background-cat-medium.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background/gift-background-cat-medium@2x.jpg');
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -160,7 +168,12 @@
     background-image: url("../../img/background/gift-background-cat-large.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/background/gift-background-cat-large@2x.png');
+    }
   }
+
 }
 
 .additionally__terms-description {

@@ -1,5 +1,4 @@
 .main-header__container {
-
   @media (min-width: $tablet-width) {
     padding: 24px 30px 62px;
   }
@@ -11,28 +10,29 @@
   }
 }
 
-
 .main-header__logo-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &:hover {
+    opacity: 0.8;
+  }
 
+  &:active {
+    opacity: 0.6;
+  }
   .nojs & {
     width: 70%;
   }
-
-  // @media (min-width: $tablet-width) {
-  //   &:first-child {
-  //     margin-right: 12px;
-  //   }
-  // }
 }
 
 .main-header__link {
+  // &:hover {
+  //   opacity: 0.8;
+  // }
   @media (min-width: $tablet-width) {
     &:first-child {
       margin-right: 12px;
-
     }
   }
 }

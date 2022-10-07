@@ -1,10 +1,8 @@
 .main-nav {
-
   @media (max-width: $mobile-width-only) {
     padding: 10px 20px 17px;
     border-bottom: 1px solid #d9d9d9;
   }
-
 
   @media (max-width: $mobile-width-only) {
     position: relative;
@@ -23,9 +21,6 @@
     }
   }
 
-
-
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -34,10 +29,9 @@
 }
 
 .main-nav--opened .main-header__button {
-
   &::after,
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 30px;
     right: 20px;
@@ -83,12 +77,11 @@
 
   &--index {
     @media (min-width: $desktop-width) {
-
       color: $white;
 
       &::before {
         display: block;
-        content: "";
+        content: '';
         top: 0;
         right: 0;
         max-height: 694px;
@@ -101,6 +94,10 @@
         background-size: cover;
         background-position: 50% 0;
         background-color: $basic-green;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url('../../img/background/background-cat-large@2x.jpg');
+        }
       }
     }
   }
@@ -111,13 +108,27 @@
   list-style: none;
   text-align: center;
 
+  &:hover {
+    opacity: 0.6;
+
+    &::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid #e6e6e6;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
-
 
     &:not(:last-child) {
       margin-right: 33px;
@@ -128,7 +139,7 @@
     }
 
     &--active::before {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -9px;
       left: 0;
@@ -153,6 +164,11 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+
+  // &:hover {
+  //   opacity: 0.6;
+  //   &::backdrop
+  // }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;

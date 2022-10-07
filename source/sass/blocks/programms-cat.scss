@@ -6,9 +6,7 @@
   }
 }
 
-
 .programms-cat__container {
-
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -46,14 +44,18 @@
   border-radius: 50%;
   border: 1px solid #cdcdcd;
 
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
   }
 }
 
-.programms-cat__input:checked+.programms-cat__marker::after {
-  content: "";
+.programms-cat__input:checked + .programms-cat__marker::after {
+  content: '';
   position: absolute;
   top: calc(50% - 7px);
   left: calc(50% - 7px);
@@ -62,7 +64,7 @@
   border-radius: 50%;
   background-color: $basic-green;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
     top: calc(50% - 9px);
@@ -79,5 +81,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.programms-cat__input {
+  &:disabled ~ .programms-cat__marker,
+  &:disabled ~ .programms-cat__description {
+    opacity: 0.3;
   }
 }
