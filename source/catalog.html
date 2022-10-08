@@ -3,15 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="icon" href="./favicon.ico" />
     <link rel="icon" href="./img/favicons/favicon32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="./fonts/Oswald-Medium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Oswald-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>Cat Enetgy</title>
   </head>
-
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container">
@@ -55,21 +68,20 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-
           <div class="main-nav__container">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link" href="./index.html"> главная </a>
+                <a class="main-nav__link" href="./index.html">главная</a>
               </li>
               <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="./catalog.html">
-                  каталог продукции
-                </a>
+                <a class="main-nav__link" href="./catalog.html"
+                  >каталог продукции</a
+                >
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="./form.html">
-                  подбор программы
-                </a>
+                <a class="main-nav__link" href="./form.html"
+                  >подбор программы</a
+                >
               </li>
             </ul>
           </div>
@@ -90,8 +102,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-chicken-500g.png    1x,
+                      ./img/contant/product/card-chicken-500g.webp,
+                      ./img/contant/product/card-chicken-500g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-chicken-500g.png,
                       ./img/contant/product/card-chicken-500g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-chicken-500g-small.webp,
+                      ./img/contant/product/card-chicken-500g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -133,8 +159,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-chicken-1000g.png    1x,
+                      ./img/contant/product/card-chicken-1000g.webp,
+                      ./img/contant/product/card-chicken-1000g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-chicken-1000g.png,
                       ./img/contant/product/card-chicken-1000g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-chicken-1000g-small.webp,
+                      ./img/contant/product/card-chicken-1000g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -176,8 +216,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-fish-500g.png    1x,
+                      ./img/contant/product/card-fish-500g.webp,
+                      ./img/contant/product/card-fish-500g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-fish-500g.png,
                       ./img/contant/product/card-fish-500g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-fish-500g-small.webp,
+                      ./img/contant/product/card-fish-500g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -219,8 +273,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-fish-1000g.png    1x,
+                      ./img/contant/product/card-fish-1000g.webp,
+                      ./img/contant/product/card-fish-1000g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-fish-1000g.png,
                       ./img/contant/product/card-fish-1000g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-fish-1000g-small.webp,
+                      ./img/contant/product/card-fish-1000g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -262,8 +330,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-buckwheat-500g.png    1x,
+                      ./img/contant/product/card-buckwheat-500g.webp,
+                      ./img/contant/product/card-buckwheat-500g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-buckwheat-500g.png,
                       ./img/contant/product/card-buckwheat-500g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-buckwheat-500g-small.webp,
+                      ./img/contant/product/card-buckwheat-500g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -305,8 +387,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-buckwheat-1000g.png    1x,
+                      ./img/contant/product/card-buckwheat-1000g.webp,
+                      ./img/contant/product/card-buckwheat-1000g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-buckwheat-1000g.png,
                       ./img/contant/product/card-buckwheat-1000g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-buckwheat-1000g-small.webp,
+                      ./img/contant/product/card-buckwheat-1000g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -348,8 +444,22 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./img/contant/product/card-rice-500g.png    1x,
+                      ./img/contant/product/card-rice-500g.webp,
+                      ./img/contant/product/card-rice-500g@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./img/contant/product/card-rice-500g.png,
                       ./img/contant/product/card-rice-500g@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./img/contant/product/card-rice-500g-small.webp,
+                      ./img/contant/product/card-rice-500g-small@2x.webp 2x
                     "
                   />
                   <img
@@ -485,8 +595,7 @@
           <h2 class="visually-hidden">Наш адрес</h2>
           <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span>
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="contacts__map-container">
@@ -498,8 +607,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          ></iframe>
         </div>
       </section>
     </main>
@@ -511,7 +619,6 @@
             <svg class="logo-footer__image" width="128" height="24">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
-            <!-- </svg> -->
           </a>
         </div>
         <div class="main-footer__social social-networks">
@@ -553,7 +660,7 @@
         </div>
       </div>
     </footer>
-
     <script src="./js/menu-toggle.js"></script>
+    <script src="./js/card.js"></script>
   </body>
 </html>

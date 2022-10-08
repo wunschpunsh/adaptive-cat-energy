@@ -37,7 +37,6 @@
 }
 
 .guide__list {
-
   margin: 0;
   padding-left: 80px;
   list-style: none;
@@ -71,7 +70,7 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: -80px;
@@ -111,7 +110,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    // min-height: 280px;
     margin-bottom: 0;
     padding: 111px 0 57px;
     font-size: 16px;

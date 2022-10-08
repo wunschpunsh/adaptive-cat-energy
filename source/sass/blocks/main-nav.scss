@@ -73,6 +73,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &--index {
@@ -89,14 +90,14 @@
         width: 50%;
         position: absolute;
         z-index: -1;
-        background-image: url('../../img/background/background-cat-large.jpg');
+        background-image: url('../../img/background/background-cat-large.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
         background-color: $basic-green;
 
         @media (min-resolution: 2dppx) {
-          background-image: url('../../img/background/background-cat-large@2x.jpg');
+          background-image: url('../../img/background/background-cat-large@2x.webp');
         }
       }
     }
@@ -164,11 +165,6 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-
-  // &:hover {
-  //   opacity: 0.6;
-  //   &::backdrop
-  // }
 
   @media (min-width: $tablet-width) {
     font-weight: 400;

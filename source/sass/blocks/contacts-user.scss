@@ -40,7 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 78px;
-    margin-bottom: 69px;
+    margin-bottom: 54px;
   }
 }
 
@@ -77,7 +77,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 15px;
   }
 }
 

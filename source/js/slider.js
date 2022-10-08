@@ -1,3 +1,5 @@
+'use strict';
+
 const sliderButton = document.querySelector('.slider__button');
 const sliderImageContainer = document.querySelector('.slider__image');
 const sliderImageBefore = document.querySelector('.slider__image--before');
@@ -16,7 +18,7 @@ if (window.screen.width >= TABLET_WIDTH) {
   imageCatAfter.style.width = IMAGE_CONTAINER_WIDTH / 2 + 'px';
 }
 
-onSliderButtonClick = () => {
+const onSliderButtonClick = () => {
   sliderButtonMark.classList.toggle('slider__button-mark--active');
   sliderImageBefore.classList.toggle('slider__image--active');
   sliderImageAfter.classList.toggle('slider__image--active');

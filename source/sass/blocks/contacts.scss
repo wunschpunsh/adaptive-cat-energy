@@ -21,7 +21,7 @@
     width: 28%;
     position: absolute;
     top: 20%;
-    left: calc((100vw - 1220px)/2);
+    left: calc((100vw - 1220px) / 2);
     padding: 56px 80px;
     z-index: 1;
     background-color: $white;
@@ -40,7 +40,6 @@
     font-size: 20px;
     line-height: 26px;
   }
-
 }
 
 .contacts__adress {
@@ -69,8 +68,6 @@
   }
 }
 
-
-
 .contacts__map-google {
   display: block;
   width: 100%;
@@ -81,32 +78,29 @@
   }
 
   &--nojs {
-
-
-    background-image: url("../../img/contant/map-small.jpg");
+    background-image: url('../../img/contant/map-small.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/contant/map-small@2x.jpg");
+      background-image: url('../../img/contant/map-small@2x.webp');
     }
 
-    @media (min-width:$tablet-width) {
-      background-image: url('../../img/contant/map-medium.jpg');
+    @media (min-width: $tablet-width) {
+      background-image: url('../../img/contant/map-medium.webp');
 
       @media (min-resolution: 2dppx) {
-        background-image: url('../../img/contant/map-medium@2x.jpg');
+        background-image: url('../../img/contant/map-medium@2x.webp');
       }
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url('../../img/contant/map-large.jpg');
+      background-image: url('../../img/contant/map-large.webp');
 
       @media (min-resolution: 2dppx) {
-        background-image: url('../../img/contant/map-large@2x.jpg');
+        background-image: url('../../img/contant/map-large@2x.webp');
       }
     }
   }
-
 }

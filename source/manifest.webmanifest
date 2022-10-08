@@ -1,6 +1,14 @@
 {
   "icons": [
-    { "src": "source/img/favicons/android-icon-192x192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "source/img/favicons/ms-icon-310x310", "type": "image/png", "sizes": "310x310" }
+    {
+      "src": "build/img/favicons/android-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "build/img/favicons/ms-icon-310x310",
+      "type": "image/png",
+      "sizes": "310x310"
+    }
   ]
 }

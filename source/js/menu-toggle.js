@@ -1,3 +1,5 @@
+'use strict';
+
 const menuButton = document.querySelector('.main-header__button');
 const naviBar = document.querySelector('.main-header__navigation');
 

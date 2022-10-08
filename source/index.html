@@ -3,18 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="icon" href="./favicon.ico" />
     <link rel="icon" href="./img/favicons/favicon32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180x180.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
+    <link
+      rel="preload"
+      href="./fonts/Oswald-Medium.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Oswald-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+
     <title>Cat Enetgy</title>
     <script>
       document.documentElement.classList.remove('nojs');
     </script>
   </head>
-
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container">
@@ -58,22 +72,21 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-
           <div class="main-nav__container">
             <ul class="main-nav__list main-nav__list--index">
               <li
                 class="main-nav__item main-nav__item--active main-nav__item--active-index"
               >
-                <a class="main-nav__link" href="./index.html"> главная </a>
+                <a class="main-nav__link" href="./index.html">главная</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="./catalog.html">
-                  каталог продукции
-                </a>
+                <a class="main-nav__link" href="./catalog.html"
+                  >каталог продукции</a
+                >
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="./form.html">
-                  подбор программы
+                <a class="main-nav__link" href="./form.html"
+                  >подбор программы
                 </a>
               </li>
             </ul>
@@ -87,19 +100,42 @@
           <div class="intro__wrapper">
             <h1 class="intro__title">Функциональное питание для котов</h1>
             <p class="intro__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <div class="intro__image-container">
             <picture>
               <source
                 media="(min-width: 1440px)"
                 srcset="
-                  ./img/contant/product-large.png    1x,
+                  ./img/contant/product-large.webp,
+                  ./img/contant/product-large@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/contant/product-large.png,
                   ./img/contant/product-large@2x.png 2x
                 "
               />
               <source
                 media="(min-width:768px)"
                 srcset="
-                  ./img/contant/product-medium.png    1x,
+                  ./img/contant/product-medium.webp,
+                  ./img/contant/product-medium@2x.webp 2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./img/contant/product-medium.png,
                   ./img/contant/product-medium@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width:320px)"
+                srcset="
+                  ./img/contant/product-small.webp,
+                  ./img/contant/product-small@2x.webp 2x
                 "
               />
               <img
@@ -134,11 +170,8 @@
                 питомцу сбросить лишний вес.
               </p>
               <a href="#" class="programm__link"
-                >каталог slim
-                <svg class="programm__link-icon" width="24" height="12">
-                  <!-- <use xlink:href="img/sprite.svg#arrow"></use> -->
-                </svg>
-              </a>
+                >каталог slim <span class="programm__link-icon"></span
+              ></a>
             </li>
             <li class="programms__item programm">
               <div class="programm__title-wrapper">
@@ -152,11 +185,8 @@
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
               <a href="#" class="programm__link"
-                >каталог pro
-                <svg class="programm__link-icon" width="24" height="12">
-                  <!-- <use xlink:href="img/sprite.svg#arrow"></use> -->
-                </svg>
-              </a>
+                >каталог pro <span class="programm__link-icon"></span
+              ></a>
             </li>
           </ul>
         </div>
@@ -167,23 +197,19 @@
           <ul class="guide__list">
             <li class="guide__item guide__item--nutrients">
               Функциональное питание содержит только полезные питательные
-              вещества.
-              <span class="guide__item-number">1</span>
+              вещества. <span class="guide__item-number">1</span>
             </li>
             <li class="guide__item guide__item--powder">
               Выпускается в виде порошка, который нужно лишь залить кипятком и
-              готово.
-              <span class="guide__item-number">2</span>
+              готово. <span class="guide__item-number">2</span>
             </li>
             <li class="guide__item guide__item--meal">
               Замените один-два приема обычной еды на наше функциональное
-              питание.
-              <span class="guide__item-number">3</span>
+              питание. <span class="guide__item-number">3</span>
             </li>
             <li class="guide__item guide__item--result">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
-              питомца!
-              <span class="guide__item-number">4</span>
+              питомца! <span class="guide__item-number">4</span>
             </li>
           </ul>
         </div>
@@ -226,8 +252,22 @@
                     <source
                       media="(min-width:768px)"
                       srcset="
-                        ./img/contant/cat-before-medium.png    1x,
+                        ./img/contant/cat-before-medium.webp,
+                        ./img/contant/cat-before-medium@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./img/contant/cat-before-medium.png,
                         ./img/contant/cat-before-medium@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        ./img/contant/cat-before-small.webp,
+                        ./img/contant/cat-before-small@2x.webp 2x
                       "
                     />
                     <img
@@ -245,8 +285,22 @@
                     <source
                       media="(min-width:768px)"
                       srcset="
-                        ./img/contant/cat-after-medium.png    1x,
+                        ./img/contant/cat-after-medium.webp,
+                        ./img/contant/cat-after-medium@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="
+                        ./img/contant/cat-after-medium.png,
                         ./img/contant/cat-after-medium@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:320px)"
+                      srcset="
+                        ./img/contant/cat-after-small.webp,
+                        ./img/contant/cat-after-small.webp 2x
                       "
                     />
                     <img
@@ -261,7 +315,6 @@
                 </div>
               </div>
               <div class="slider__container">
-                <!-- <span class="slider__text slider__text--before">Было</span> -->
                 <button class="slider__button">
                   <span
                     class="slider__button-mark slider__button-mark--active"
@@ -287,14 +340,12 @@
           </div>
         </div>
       </section>
-
       <section class="contacts">
         <div class="contacts__container">
           <h2 class="visually-hidden">Наш адрес</h2>
           <p class="contacts__slogan">приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__adress">
-            ул. Большая Конюшенная, д. 19/8
-            <span>Санкт-Петербург</span>
+            ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </p>
         </div>
         <div class="contacts__map-container">
@@ -306,8 +357,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          ></iframe>
         </div>
       </section>
     </main>
@@ -319,7 +369,6 @@
             <svg class="logo-footer__image" width="128" height="24">
               <use xlink:href="img/sprite.svg#footer-logo"></use>
             </svg>
-            <!-- </svg> -->
           </a>
         </div>
         <div class="main-footer__social social-networks">
@@ -361,7 +410,6 @@
         </div>
       </div>
     </footer>
-
     <script src="./js/menu-toggle.js"></script>
     <script src="./js/slider.js"></script>
   </body>
