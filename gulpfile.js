@@ -146,8 +146,3 @@ export default gulp.series(
   gulp.parallel(styles, minifyHtml, minifyJs, svg, sprite, createWebp),
   gulp.series(server, watcher)
 );
-
-// export default gulp.series(
-//   gulp.parallel(styles, minifyHtml, minifyJs, sprite),
-//   gulp.series(server, watcher)
-// );
